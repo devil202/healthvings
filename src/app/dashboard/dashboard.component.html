@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="container">
+	  <form class="form-signin" (submit)="saveDetails()">
+        <h2 class="form-signin-heading">Fill Your Details</h2>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="title" class="form-control" placeholder="12" required autofocus>
+        <label for="content">Content</label>
+        <textarea id="inputPassword" class="form-control" name="content" id="content" [(ngModel)]="content" required></textarea>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Save Details</button>
+      </form>
+</div>
